@@ -61,18 +61,4 @@ ActiveRecord::Schema.define(version: 20150827093152) do
     t.text   "desc", limit: 65535
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string   "email",      limit: 255, default: "", null: false
-    t.string   "username",   limit: 255, default: "", null: false
-    t.string   "password",   limit: 255, default: "", null: false
-    t.string   "address",    limit: 255, default: "", null: false
-    t.string   "phone",      limit: 255, default: "", null: false
-    t.integer  "role_id",    limit: 4
-    t.datetime "deleted_at"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
-  end
-
-  add_index "users", ["deleted_at"], name: "index_users_on_deleted_at", using: :btree
-
 end

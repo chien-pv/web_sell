@@ -71,6 +71,9 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.9.2)
       faraday (>= 0.7.4, < 0.10)
+    frontend-generators (0.0.6)
+      rainbow (= 2.0.0)
+      turf (= 0.0.5)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     google-api-client (0.8.6)
@@ -188,6 +191,7 @@ GEM
       activesupport (= 4.2.3)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
+    rainbow (2.0.0)
     rake (10.4.2)
     rdoc (4.2.0)
     responders (2.1.0)
@@ -222,6 +226,7 @@ GEM
     tilt (1.4.1)
     turbolinks (2.5.3)
       coffee-rails
+    turf (0.0.5)
     twitter (5.14.0)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
@@ -253,6 +258,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   devise (~> 3.4)
+  frontend-generators
   google-api-client
   instagram
   jbuilder (~> 2.0)

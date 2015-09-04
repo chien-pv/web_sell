@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable
 
   has_many :identities
+  belongs_to :role
 
   def twitter
     identities.where( :provider => "twitter" ).first

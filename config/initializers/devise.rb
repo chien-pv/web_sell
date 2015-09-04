@@ -15,9 +15,9 @@ Devise.setup do |config|
   config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
 
   config.omniauth :google_oauth2, ENV['GOOGLE_OAUTH2_APP_ID'], ENV['GOOGLE_OAUTH2_APP_SECRET'], scope: "email,profile,offline", prompt: "consent", setup: true
-  config.omniauth :instagram, ENV['INSTAGRAM_APP_ID'], ENV['INSTAGRAM_APP_SECRET'], setup: true
+  config.omniauth :instagram, ENV['GOOGLE_OAUTH2_APP_ID'], ENV['GOOGLE_OAUTH2_APP_SECRET'], setup: true
   # config.omniauth :facebook, "1065897953442823", "c177871e0d1f7ec03e640f523863d95c", scope: "email", setup: true
-  config.omniauth :facebook,"1065897953442823", "c177871e0d1f7ec03e640f523863d95c", scope: "email", setup: true
+  config.omniauth :facebook,"1475719009397357", "dfb3dc9a9d9883f3dced8114588ade40", scope: "email", setup: true
   config.omniauth :twitter, ENV['TWITTER_APP_ID'], ENV['TWITTER_APP_SECRET'], setup: true
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
